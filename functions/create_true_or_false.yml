@@ -1,0 +1,26 @@
+{
+  "name": "create_true_or_false",
+  "description": "Create a true or false question",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "question": {
+        "type": "string",
+        "description": "The question to ask the user"
+      },
+      "answer": {
+        "type": "string",
+        "enum": ["true", "false"],
+        "description": "The answer to the question",
+      },
+      "question_type": {
+        "type": "string",
+        "enum": ["true_or_false"],
+        "description": "The type of question",
+      },
+    },
+    "required": ["question","answer", "question_type"],
+    "additionalProperties": false,
+  },
+  "strict": true,
+}

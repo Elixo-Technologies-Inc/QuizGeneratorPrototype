@@ -1,0 +1,42 @@
+{
+  "name": "create_multiple_choice",
+  "description": "Create a multiple choice question",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "question": {
+        "type": "string",
+        "description": "The question to ask the user"
+      },
+      "choice1": {
+        "type": "string",
+        "description": "The first choice",
+      },
+      "choice2": {
+        "type": "string",
+        "description": "The second choice",
+      },
+      "choice3": {
+        "type": "string",
+        "description": "The third choice",
+      },
+      "choice4": {
+        "type": "string",
+        "description": "The fourth choice",
+      },
+      "answer": {
+        "type": "string",
+        "enum": ["choice1", "choice2", "choice3", "choice4"],
+        "description": "The answer to the question",
+      },
+      "question_type": {
+        "type": "string",
+        "enum": ["multiple_choice"],
+        "description": "The type of question",
+      },
+    },
+    "required": ["question", "choice1", "choice2", "choice3", "choice4", "answer", "question_type"],
+    "additionalProperties": false,
+  },
+  "strict": true,
+}
