@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_extras.stylable_container import stylable_container
 from openai_api import OpenAIAPI
 
 openai_api = OpenAIAPI()
